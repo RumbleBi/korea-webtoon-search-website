@@ -1,21 +1,17 @@
 import styled from "styled-components";
 
-export const Background = styled.div`
+export const BackgroundImg = styled.div`
   @keyframes moveRight {
-    from {
-      margin-left: 0px;
+    0% {
+      background-position: 0 center;
     }
-    to {
-      margin-left: 100px;
+    100% {
+      background-position: -2250px center;
     }
   }
-  position: absolute;
-  width: 100%;
-  height: 100%;
   display: flex;
-  background-size: auto 100%;
-  background-image: url("https://web-prod.laftel.net/3.2.34/assets/img-landing-background.36bcefc5.webp");
-  background-repeat: repeat-x;
-  animation: moveRight 10s linear 0s infinite normal none;
-  animation-play-state: running;
+  width: 100vw;
+  height: 100vh;
+  background: url("/images/background.webp") 0 center / 2250px repeat;
+  animation: moveRight 30s linear 0s infinite normal none;
 `;
