@@ -8,7 +8,7 @@ export const getWebtoons = async () => {
       method: "get",
       url: baseUrl,
     });
-    return console.log(res.data);
+    return res.data;
   } catch (e) {
     return e;
   }

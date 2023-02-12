@@ -30,5 +30,6 @@ export const Title = styled.div`
 `;
 export const WebtoonListWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   margin-top: 2rem;
 `;
