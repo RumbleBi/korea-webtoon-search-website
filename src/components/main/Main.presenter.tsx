@@ -1,7 +1,6 @@
 import { useWebtoonList } from "@/hooks/useWebtoonList";
 import { getDate } from "@/libraries/utils";
 import { Col, Row } from "antd";
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import Loading from "../commons/loading/Loading";
 import * as S from "./Main.styles";
 
@@ -15,7 +14,7 @@ import * as S from "./Main.styles";
 //   updatedWebtoonCount: number;
 // }
 
-export default function MainPresenter() {
+export default function MainPresenter(): JSX.Element {
   const webtoonList = useWebtoonList();
   console.log(webtoonList);
   return (

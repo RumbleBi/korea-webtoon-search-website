@@ -24,7 +24,12 @@ async function getWebtoonList() {
 }
 
 export function useWebtoonList(): WebtoonList[] {
-  const fallback = [];
-  const { data = fallback } = useQuery(queryKeys.webtoonList, getWebtoonList);
+  const fallback: [] = [];
+  const { data = fallback } = useQuery(queryKeys.webtoonList, getWebtoonList, {
+    onError: (error) => {
+      const title = error instanceof Error ? error.message : "서버 연결에 문제가 있습니다.";
+      alert(title);
+    },
+  });
   return data;
 }

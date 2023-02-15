@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Background = styled.div`
+export const Background = styled.div<{ display: string }>`
   width: 200px;
   height: 200px;
   display: inline-block;
@@ -9,6 +9,7 @@ export const Background = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: ${(props) => props.display};
 `;
 
 export const Spin = styled.div`
