@@ -5,12 +5,10 @@ export default function Loading(): JSX.Element {
   const display = isFetching ? "inherit" : "none";
 
   return (
-    <>
-      <S.Background display={display}>
-        <S.Spin>
-          <div></div>
-        </S.Spin>
-      </S.Background>
-    </>
+    <S.Background display={display}>
+      <S.Spin>
+        <div></div>
+      </S.Spin>
+    </S.Background>
   );
 }

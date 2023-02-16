@@ -29,8 +29,27 @@ export const Title = styled.div`
   font-size: 2.5rem;
   font-weight: bold;
 `;
-export const WebtoonListWrapper = styled.div`
+export const Wrapper = styled.div`
   display: flex;
+  background-color: red;
   flex-direction: column;
+  align-items: center;
   margin-top: 2rem;
 `;
+export const WebtoonInfoWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+export const WebtoonUpdateBox = styled.div``;
+export const WebtoonCountBox = styled.div``;
+export const WebtoonPlatformBox = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+`;
+export const WebtoonDaysBox = styled.div`
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+`;
+export const WebtoonList = styled.div``;

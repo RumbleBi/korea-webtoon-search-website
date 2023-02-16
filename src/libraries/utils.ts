@@ -1,4 +1,7 @@
-export const getDate = (data: string) => {
+export const getDate = (data: string | undefined) => {
+  if (typeof data === "undefined") {
+    return;
+  }
   const year = data.split("-")[0];
   const month = data.split("-")[1];
   const day = data.split("-")[2].split("T")[0];
