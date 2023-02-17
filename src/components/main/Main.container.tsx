@@ -1,5 +1,5 @@
-import MainPresenter from "./Main.presenter";
+import MainUI from "./Main.presenter";
 
-export default function MainContainer(): JSX.Element {
-  return <MainPresenter />;
+export default function Main(): JSX.Element {
+  return <MainUI />;
 }

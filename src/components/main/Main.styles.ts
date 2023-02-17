@@ -31,6 +31,7 @@ export const Title = styled.div`
 `;
 export const Wrapper = styled.div`
   display: flex;
+  width: 100vw;
   background-color: red;
   flex-direction: column;
   align-items: center;
@@ -39,8 +40,14 @@ export const Wrapper = styled.div`
 export const WebtoonInfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
+  padding: 10px 5% 10px 5%;
 `;
-export const WebtoonUpdateBox = styled.div``;
+export const WebtoonUpdateBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+`;
 export const WebtoonCountBox = styled.div``;
 export const WebtoonPlatformBox = styled.div`
   display: flex;
@@ -52,4 +59,8 @@ export const WebtoonDaysBox = styled.div`
     justify-content: space-evenly;
   }
 `;
-export const WebtoonList = styled.div``;
+// export const WebtoonListWrapper = styled.div`
+//   background-color: blue;
+//   width: 100%;
+//   height: 100vh;
+// `;

@@ -2,7 +2,7 @@ import { axiosInstance } from "@/api";
 import { useQuery } from "react-query";
 import { queryKeys } from "../react-query/constants";
 
-interface IWebtoonList {
+export interface IWebtoonList {
   additional?: {
     new?: boolean;
     adult?: boolean;
