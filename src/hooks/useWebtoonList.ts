@@ -8,18 +8,18 @@ export interface IWebtoonList {
     adult?: boolean;
   };
   fanCount?: number;
-  img?: string;
+  img: string;
   searchKeyword?: string;
   service?: string;
   title?: string;
   updateDays?: string[];
-  url?: string;
+  url: string;
   webtoonId?: number;
   _id?: string;
 }
 
 async function getWebtoonList(): Promise<IWebtoonList[]> {
-  const { data } = await axiosInstance.get("/?perPage=60&page=0");
+  const { data } = await axiosInstance.get("/?perPage=12&page=0");
   return data.webtoons;
 }
 

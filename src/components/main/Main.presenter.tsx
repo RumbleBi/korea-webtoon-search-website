@@ -44,10 +44,8 @@ export default function MainUI(): JSX.Element {
               </ul>
             </S.WebtoonDaysBox>
           </S.WebtoonInfoWrapper>
-          {/* <S.WebtoonListWrapper> */}
-          <WebtoonList />
-          {/* </S.WebtoonListWrapper> */}
         </S.Wrapper>
+        <WebtoonList />
       </S.BackgroundImg>
     </S.Background>
   );

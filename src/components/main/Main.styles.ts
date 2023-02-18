@@ -32,7 +32,7 @@ export const Title = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   width: 100vw;
-  background-color: red;
+  height: 50vh;
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
