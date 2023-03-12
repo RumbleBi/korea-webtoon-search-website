@@ -28,6 +28,9 @@ export const Title = styled.div`
   margin-top: 1rem;
   font-size: 2.5rem;
   font-weight: bold;
+  @media screen and (max-width: 480px) {
+    color: red;
+  }
 `;
 export const Wrapper = styled.div`
   display: flex;
