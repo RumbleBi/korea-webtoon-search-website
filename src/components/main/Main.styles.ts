@@ -25,12 +25,11 @@ export const BackgroundImg = styled.div`
 export const Title = styled.div`
   margin-top: 1rem;
   text-align: center;
+  background-color: var(--background-main);
   @media ${breakPoints.mobile} {
-    width: auto;
     padding: 1rem;
     border-radius: 2rem;
     font-size: var(--font-size-sm);
-    background-color: var(--background-main);
   }
 `;
 export const Wrapper = styled.div`
@@ -62,15 +61,37 @@ export const WebtoonUpdateBox = styled.div`
 export const WebtoonPlatformBox = styled.div`
   display: flex;
   justify-content: space-evenly;
+  div {
+    padding: 0.625rem;
+    border-radius: 2rem;
+  }
+  #platform {
+    background-color: var(--background-main);
+  }
+  div:not(#platform) {
+    cursor: pointer;
+    background-color: var(--background-click);
+  }
+  @media ${breakPoints.mobile} {
+    margin-top: 1rem;
+  }
 `;
 export const WebtoonDaysBox = styled.div`
   ul {
     display: flex;
     justify-content: space-evenly;
+    cursor: pointer;
+    li {
+      background-color: var(--background-click);
+      border-radius: 2rem;
+    }
+  }
+  @media ${breakPoints.mobile} {
+    margin-top: 1rem;
+    ul {
+      li {
+        padding: 0.125rem;
+      }
+    }
   }
 `;
-// export const WebtoonListWrapper = styled.div`
-//   background-color: blue;
-//   width: 100%;
-//   height: 100vh;
-// `;

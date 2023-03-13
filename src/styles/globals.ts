@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
   /* --font-size-md: 1rem; */
   --font-size-sm: 1.5rem;
   --background-main: #6b3fa0;
+  --background-click: #ad66a9;
 }
   * {
     color: #fff;

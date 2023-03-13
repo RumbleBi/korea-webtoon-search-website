@@ -25,7 +25,7 @@ export default function MainUI(): JSX.Element {
               <div>카카오 작품 수 : {webtoonInfo?.kakaoWebtoonCount} </div>
             </S.WebtoonUpdateBox>
             <S.WebtoonPlatformBox>
-              <div>플랫폼</div>
+              <div id='platform'>플랫폼</div>
               <div>네이버</div>
               <div>카카오페이지</div>
               <div>카카오</div>
@@ -39,7 +39,7 @@ export default function MainUI(): JSX.Element {
                 <li>금</li>
                 <li>토</li>
                 <li>일</li>
-                <li>완결</li>
+                <li>완</li>
                 <li>네이버 Daily+</li>
               </ul>
             </S.WebtoonDaysBox>
