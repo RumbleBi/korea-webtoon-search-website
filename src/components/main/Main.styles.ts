@@ -1,5 +1,5 @@
+import { breakPoints } from "@/styles/media";
 import styled from "styled-components";
-
 export const Background = styled.div`
   width: 100vw;
   height: 100vh;
@@ -28,7 +28,8 @@ export const Title = styled.div`
   margin-top: 1rem;
   font-size: 2.5rem;
   font-weight: bold;
-  @media screen and (max-width: 480px) {
+  color: var(--font-color);
+  @media ${breakPoints.mobile} {
   }
 `;
 export const Wrapper = styled.div`
