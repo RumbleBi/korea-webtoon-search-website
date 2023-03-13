@@ -12,7 +12,7 @@ export default function MainUI(): JSX.Element {
     <S.Background>
       <Loading />
       <S.BackgroundImg>
-        <S.Title>한국 웹툰 정보 사이트</S.Title>
+        <S.Title>Korea Webtoon Info</S.Title>
         <S.Wrapper>
           <S.WebtoonInfoWrapper>
             <S.WebtoonUpdateBox>

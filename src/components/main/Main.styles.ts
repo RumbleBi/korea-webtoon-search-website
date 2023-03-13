@@ -23,35 +23,42 @@ export const BackgroundImg = styled.div`
   animation: moveRight 30s linear 0s infinite normal none;
 `;
 export const Title = styled.div`
-  width: 100%;
-  text-align: center;
   margin-top: 1rem;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: var(--font-color);
+  text-align: center;
   @media ${breakPoints.mobile} {
+    width: auto;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: var(--font-size-sm);
+    background-color: var(--background-main);
   }
 `;
 export const Wrapper = styled.div`
   display: flex;
-  width: 100vw;
-  height: 50vh;
+  width: 100%;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 `;
 export const WebtoonInfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 10px 5% 10px 5%;
+  @media ${breakPoints.mobile} {
+    padding: 1rem;
+  }
 `;
 export const WebtoonUpdateBox = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  @media ${breakPoints.mobile} {
+    div {
+      float: left;
+      margin: 0.25rem 0.25rem;
+      padding: 0.625rem;
+      border-radius: 2rem;
+      background-color: var(--background-main);
+    }
+  }
 `;
-export const WebtoonCountBox = styled.div``;
 export const WebtoonPlatformBox = styled.div`
   display: flex;
   justify-content: space-evenly;
