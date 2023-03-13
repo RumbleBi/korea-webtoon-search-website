@@ -2,7 +2,9 @@ import { breakPoints } from "@/styles/media";
 import styled from "styled-components";
 export const Background = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
+  display: flex;
+  flex-grow: 1;
   position: relative;
 `;
 export const BackgroundImg = styled.div`
@@ -18,7 +20,7 @@ export const BackgroundImg = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
   background: url("/images/background.webp") 0 center / 2250px repeat;
   animation: moveRight 30s linear 0s infinite normal none;
 `;

@@ -2,16 +2,10 @@ import { IWebtoonListUIProps } from "./WebtoonList.types";
 import * as S from "./WebtoonList.styles";
 import Image from "next/image";
 import Link from "next/link";
-import { ConfigProvider, Row, Col, Grid, Tag } from "antd";
-
-const { useBreakpoint } = Grid;
+import { ConfigProvider, Row, Col } from "antd";
 
 export default function WebtoonListUI({ webtoonList }: IWebtoonListUIProps): JSX.Element {
-  const screens = useBreakpoint();
-
-  console.log(screens.xs);
-  console.log(screens.lg);
-
+  console.log(webtoonList);
   return (
     <ConfigProvider
       theme={{
@@ -35,8 +29,8 @@ export default function WebtoonListUI({ webtoonList }: IWebtoonListUIProps): JSX
             <S.WebtoonItem key={el._id}>
               <a href={el.url} target='_blank' rel='noreferrer'>
                 <div>{el.title}</div>
-                <div>{el.service}</div>
-                <div>{el.updateDays}</div>
+                <div>플랫폼 : {el.service}</div>
+                <div>업데이트 : {el.updateDays}</div>
                 {el.additional?.adult && (
                   <Image
                     src='/images/adult.png'
@@ -46,12 +40,12 @@ export default function WebtoonListUI({ webtoonList }: IWebtoonListUIProps): JSX
                     unoptimized={true}
                   />
                 )}
-                <div>좋아요: {el.fanCount}만</div>
+                <div>좋아요 : {el.fanCount}만</div>
                 <S.WebtoonThumbnail>
                   {el.url.includes("pstatic") ? (
-                    <Image src={el.img} alt='img' width={150} height={200} />
+                    <Image src={el.img} alt='img' />
                   ) : (
-                    <img src={el.img} alt='img' width={150} height={200} />
+                    <img src={el.img} alt='img' />
                   )}
                 </S.WebtoonThumbnail>
               </a>
